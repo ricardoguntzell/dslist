@@ -4,7 +4,6 @@ import com.devsuperior.dslist.domain.repository.GameRepository;
 import com.devsuperior.dslist.model.GameModel;
 import com.devsuperior.dslist.model.GameResumeModel;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
