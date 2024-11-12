@@ -21,9 +21,17 @@ public class GameService {
                 .toList();
     }
 
+    public List<GameResumeModel> findByList(Long listId) {
+        return gameRepository.searchByList(listId).stream()
+                .map(GameResumeModel::new)
+                .toList();
+    }
+
     public Optional<GameModel> findById(Long gameId) {
         return gameRepository.findById(gameId)
                 .map(GameModel::new);
     }
+
+
 
 }

@@ -1,6 +1,7 @@
 package com.devsuperior.dslist.model;
 
 import com.devsuperior.dslist.domain.model.Game;
+import com.devsuperior.dslist.domain.projection.GameResumeProjection;
 
 public class GameResumeModel {
 
@@ -24,6 +25,14 @@ public class GameResumeModel {
         this.year = gameDomain.getYear();
         this.imgUrl = gameDomain.getImgUrl();
         this.shortDescription = gameDomain.getShortDescription();
+    }
+
+    public GameResumeModel(GameResumeProjection gameResumeProjection) {
+        this.id = gameResumeProjection.getId();
+        this.title = gameResumeProjection.getTitle();
+        this.year = gameResumeProjection.getYear();
+        this.imgUrl = gameResumeProjection.getImgUrl();
+        this.shortDescription = gameResumeProjection.getShortDescription();
     }
 
     public Long getId() {
