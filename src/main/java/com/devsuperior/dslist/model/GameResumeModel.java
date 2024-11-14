@@ -30,7 +30,7 @@ public class GameResumeModel {
     public GameResumeModel(GameResumeProjection gameResumeProjection) {
         this.id = gameResumeProjection.getId();
         this.title = gameResumeProjection.getTitle();
-        this.year = gameResumeProjection.getYear();
+        this.year = gameResumeProjection.getGameYear();
         this.imgUrl = gameResumeProjection.getImgUrl();
         this.shortDescription = gameResumeProjection.getShortDescription();
     }
