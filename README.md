@@ -13,7 +13,7 @@ Onde os dados são coletados inicialmente pela própria API.
 
 ## Modelo de domínio DSList
 
-![Modelo Conceitual](\src\main\resources\img\dslist-domain-model.png)
+<img src="src/main/resources/img/dslist-domain-model.png" alt="Modelo Conceitual">
 
 # Tecnologias utilizadas
 ## Back end
