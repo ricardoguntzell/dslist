@@ -5,17 +5,18 @@ import com.devsuperior.dslist.domain.service.GameService;
 import com.devsuperior.dslist.model.GameListModel;
 import com.devsuperior.dslist.model.GameResumeModel;
 import com.devsuperior.dslist.model.ReplacementModel;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@AllArgsConstructor
 @RestController
 @RequestMapping("/lists")
 public class GameListController {
 
-    @Autowired
     private GameListService gameListService;
 
     @Autowired
