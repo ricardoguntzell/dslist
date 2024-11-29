@@ -16,15 +16,7 @@ import java.util.List;
 public class GameListService {
 
     private GameListRepository gameListRepository;
-
-    @Autowired
     private GameRepository gameRepository;
-
-    public List<GameListModel> findAll() {
-        return gameListRepository.findAll().stream()
-                .map(GameListModel::new)
-                .toList();
-    }
 
     @Transactional
     public void move(Long listId, int sourceIndex, int destinationIndex) {

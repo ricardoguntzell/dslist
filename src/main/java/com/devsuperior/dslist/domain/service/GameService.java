@@ -18,12 +18,6 @@ public class GameService {
 
     private GameRepository gameRepository;
 
-    public List<GameResumeModel> findByList(Long listId) {
-        return gameRepository.searchByList(listId).stream()
-                .map(GameResumeModel::new)
-                .toList();
-    }
-
     public Game salvar(GameInputModel gameInputModel) {
         Game newGame = new Game(gameInputModel);
 

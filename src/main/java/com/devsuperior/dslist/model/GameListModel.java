@@ -18,5 +18,4 @@ public class GameListModel {
     public GameListModel(GameList gameListDomain) {
         BeanUtils.copyProperties(gameListDomain, this);
     }
-
 }
