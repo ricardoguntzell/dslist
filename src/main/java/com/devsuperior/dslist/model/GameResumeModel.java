@@ -20,10 +20,6 @@ public class GameResumeModel {
 
     private String title;
 
-    private String genre;
-
-    private String platforms;
-
     private Integer year;
 
     private String imgUrl;
@@ -32,8 +28,6 @@ public class GameResumeModel {
 
     public GameResumeModel(Game gameDomain) {
         BeanUtils.copyProperties(gameDomain, this);
-        setGenre(gameDomain.getGenre().getName());
-        setPlatforms(gameDomain.getPlatforms().getName());
     }
 
     public GameResumeModel(GameResumeProjection gameResumeProjection) {
