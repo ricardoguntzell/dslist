@@ -1,6 +1,7 @@
 package com.devsuperior.dslist.model;
 
 import com.devsuperior.dslist.domain.model.Game;
+import com.devsuperior.dslist.domain.model.Genre;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.BeanUtils;

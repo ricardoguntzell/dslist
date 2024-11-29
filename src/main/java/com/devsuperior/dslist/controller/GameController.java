@@ -5,6 +5,7 @@ import com.devsuperior.dslist.domain.service.GameService;
 import com.devsuperior.dslist.model.GameModel;
 import com.devsuperior.dslist.model.GameResumeModel;
 import com.devsuperior.dslist.model.input.GameInputModel;
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -32,7 +33,7 @@ public class GameController {
     }
 
     @PostMapping
-    public GameModel salvar(@RequestBody GameInputModel gameInputModel){
+    public GameModel salvar(@Valid @RequestBody GameInputModel gameInputModel){
         Game gameSalvo = gameService.salvar(gameInputModel);
 
         return new GameModel(gameSalvo);
